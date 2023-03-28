@@ -1,85 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>SCP - Containment Breach Reborn</title>
-	<style>
-		body {
-			background-image: url("background.png");
-			background-repeat: repeat;
-			font-family: Arial, sans-serif;
-			color: #fff;
-			text-align: center;
-		}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SCP - Containment Breach Reborn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+css
+Copy code
+.sidebar {
+  background-color: #333;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-		h1, h2, h3, h4, h5, h6 {
-			font-weight: normal;
-			text-align: center;
-		}
+.sidebar .logo {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
 
-		a {
-			color: #fff;
-			text-decoration: none;
-			border-bottom: 2px solid #fff;
-		}
+.sidebar .menu {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-		a:hover {
-			border-bottom: 2px solid #444;
-		}
+.sidebar button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
 
-		#container {
-			margin: 0 auto;
-			max-width: 800px;
-			padding: 20px;
-		}
+.sidebar button:hover {
+  background-color: #3e8e41;
+}
 
-		.image {
-			margin: 20px 0;
-		}
+.main {
+  margin-left: 220px;
+  padding: 20px;
+}
 
-		.image img {
-			max-width: 100%;
-		}
-	</style>
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+a {
+  display: block;
+  margin: 30px auto 0;
+  max-width: 300px;
+}
+  </style>
 </head>
 <body>
-	<div id="container">
-		<h1>SCP - Containment Breach Reborn</h1>
-		<p>A fan-made remake of the popular horror game.</p>
-		<p><a href="https://hltd.me/twitter">Twitter</a> | <a href="https://hltd.me/discord">Discord</a> | <a href="https://hltd.me/steam">Steam</a> | <a href="https://hyperity.net">Studio Website</a></p>
-		
-		<div class="image">
-			<img src="screenshot1.png" alt="Screenshot 1">
-		</div>
-		
-		<h2>About the Game</h2>
-		<p>SCP - Containment Breach Reborn is a fan-made remake of the popular horror game SCP - Containment Breach. The game features updated graphics, improved AI, and new levels and content.</p>
-		
-		<div class="image">
-			<img src="screenshot2.png" alt="Screenshot 2">
-		</div>
-		
-		<h2>Gameplay</h2>
-		<p>The gameplay of SCP - Containment Breach Reborn is similar to the original game. The player must navigate a facility filled with dangerous SCPs while avoiding security and escaping the facility.</p>
-		
-		<h2>Features</h2>
-		<ul>
-			<li>Improved graphics</li>
-			<li>New levels and content</li>
-			<li>Updated AI</li>
-			<li>Free to play</li>
-		</ul>
-		
-		<h2>Screenshots</h2>
-		<div class="image">
-			<img src="screenshot3.png" alt="Screenshot 3">
-		</div>
-		<div class="image">
-			<img src="screenshot4.png" alt="Screenshot 4">
-		</div>
-		
-		<h2>Download</h2>
-		<p>SCP - Containment Breach Reborn is currently available on <a href="https://hltd.me/steam">Steam</a>.</p>
-	</div>
+  <div class="sidebar">
+    <img src="logo.png" alt="SCP - Containment Breach Reborn" class="logo">
+    <div class="menu">
+      <a href="https://hltd.me/twitter"><button>Twitter</button></a>
+      <a href="https://hltd.me/discord"><button>Discord</button></a>
+      <a href="https://hltd.me/website"><button>Studio Website</button></a>
+    </div>
+  </div>
+  <div class="main">
+    <h1>SCP - Containment Breach Reborn</h1>
+    <h2>Follow the journey of D-9341</h2>
+    <p>A Class-D Personnel caught in the middle of a containment breach in the impenetrable SCP foundation. Search the facility for clues and items to assist you in escaping the unpredictable deathtrap that is the SCP Foundation.</p>
+css
+Copy code
+<h2>About the Game</h2>
+<p>The SCP Foundation is a secret international and independent organisation dedicated to containing and understanding mysterious anomalies that have appeared around the world.</p>
+
+<p>It’s 1998 and the Foundation is experiencing global tension...</p>
+
+<p>You are D-9341, a prisoner used for SCP testing and experimenting, as well as maintenance. During scheduled maintenance, suspected sabotage causes a facility-wide containment breach, leading to many SCPs escaping. Many people have died and there is significant structural damage to the site. You are one of the only survivors.</p>
+<p>Your only goal is to escape the facility alive.</p>
+<p>Through the procedural generation of rooms, random SCP encounters, and the unique perspectives and approaches taken in different story modes, SCP - Containment Breach allows for constant replayability, giving the player a special experience every time. We understand the value in making the game as enjoyable as possible, so we have considered all of these factors thoroughly.</p>
+<a href="https://hltd.me/steam"><img src="steam.png" alt="Get SCP - Containment Breach Reborn on Steam"></a>
+
+<!-- Start of footer section -->
+<footer>
+  <div class="footer-container">
+    <div class="left-col">
+      <img src="logo.png" alt="SCP - Containment Breach Reborn" class="logo">
+      <div class="social-media">
+        <a href="https://hltd.me/twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://hltd.me/discord"><i class="fab fa-discord"></i></a>
+        <a href="https://hltd.me/website"><i class="fas fa-globe"></i></a>
+      </div>
+      <p class="rights-text">© 2023 SCP - Containment Breach Reborn. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- End of footer section --> 
 </body>
 </html>
